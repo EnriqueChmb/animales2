@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Estás listo para adoptar?</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+
+<header>
+    <h1>¿Estás listo para adoptar?</h1>
+</header>
+
+<section id="formulario-section">
+    <div id="formulario-content">
+        <h2>Formulario</h2>
+        <p>Antes de adoptar un animal, adoptar a un animal es una decisión muy importante que debe meditarse, puesto que supone una gran responsabilidad e implicación, tanto emocional como económica. Antes de adoptar a un perro, un gato, un conejo o cualquier otro animal, es importante tener en cuenta las necesidades de la especie así como el tiempo que tendremos que invertir para garantizar su felicidad y cubrir todos sus cuidados. Por otro lado, es fundamental comprobar el espacio físico de nuestro hogar y confirmar que se adapta a las dimensiones del animal en cuestión. Con nuestros artículos podrás informarte de todo esto y mucho más, descubrir todos y cada uno de los cuidados de los distintos animales de compañía e, incluso, completos listados de nombres para animales.</p>
+        <form action="procesar_formulario.php" method="post" id="adoptionForm">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experiencia">¿Tienes experiencia previa con mascotas?</label>
+                <div class="radio-group">
+                    <input type="radio" id="si" name="experiencia" value="si" required>
+                    <label for="si">Sí</label>
+                    <input type="radio" id="no" name="experiencia" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="razones">¿Por qué quieres adoptar un animal?</label>
+                <textarea id="razones" name="razones" required></textarea>
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div id="texto-derecha">
+        <a href="#" onclick="history.back()">Volver Atrás</a>
+    </div>
+</section>
+
+<footer>
+    <p>Derechos de autor &copy; 2024 Mi Página</p>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
